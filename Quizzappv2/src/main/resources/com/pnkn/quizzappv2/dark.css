@@ -1,0 +1,10 @@
+.Container{
+    -fx-alignment: CENTER;
+    -fx-background-color: #121212; 
+    -fx-spacing: 15;
+}
+.Button{
+    -fx-padding: 15;
+    -fx-pref-width: 200;
+    -fx-background-color: #333333;
+}
