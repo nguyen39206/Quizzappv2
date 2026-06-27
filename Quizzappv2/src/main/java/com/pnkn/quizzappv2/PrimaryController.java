@@ -1,10 +1,7 @@
 package com.pnkn.quizzappv2;
 
 import com.pnkn.utils.MyAlertSingleton;
-import com.pnkn.utils.themes.DarkFactory;
-import com.pnkn.utils.themes.DefaultFactory;
-import com.pnkn.utils.themes.LightFactory;
-import com.pnkn.utils.themes.ThemeManager;
+import com.pnkn.utils.MyStageSingleton;
 import com.pnkn.utils.themes.ThemeTypes;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,9 +21,9 @@ public class PrimaryController implements Initializable{
     public void initialize(URL url, ResourceBundle rb) {
         this.cbThemes.setItems(FXCollections.observableArrayList(ThemeTypes.values()));
     }
-    
+   
     public void QuanLyCauHoi(ActionEvent e){
-        MyAlertSingleton.getInstance().ShowMsg("cau hoi");
+        MyStageSingleton.getInstance().showStace("Question");
     }
      public void luyenThi(ActionEvent e){
         MyAlertSingleton.getInstance().ShowMsg("luyen thi");
